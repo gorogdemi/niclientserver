@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NIClientServer", "NIClientServer\NIClientServer.csproj", "{EF2E06ED-0DE7-494F-924D-A6FB61244446}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8C46FA3-8609-459B-84C7-62DD5530198D}
+	EndGlobalSection
+EndGlobal
