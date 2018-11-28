@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NIClientServer", "NIClientServer\NIClientServer.csproj", "{EF2E06ED-0DE7-494F-924D-A6FB61244446}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiServer", "WebApiServer\WebApiServer.csproj", "{EF2E06ED-0DE7-494F-924D-A6FB61244446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssistantClient", "AssistantClient\AssistantClient.csproj", "{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{EA7A24AF-4A5E-4066-B73F-44374802DAA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF2E06ED-0DE7-494F-924D-A6FB61244446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

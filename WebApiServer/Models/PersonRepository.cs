@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Shared;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,18 +14,20 @@ namespace NIClientServer.Models
         public PersonRepository()
         {
             var json = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/Entities.json"));
-            _people = JsonConvert.DeserializeObject<List<Person>>(json);
+            _people = JsonConvert.DeserializeObject<List<Person>>(json) ?? new List<Person>();
         }
 
-        public IEnumerable<Person> GetPeople()
-        {
-            return _people.AsEnumerable();
-        }
+        public IEnumerable<Person> GetPeople() => _people.AsEnumerable();
 
-        public void AddPerson(Person person)
+        public bool AddPerson(Person person)
         {
+            if (_people.Exists(x => string.CompareOrdinal(x.SocialSecurityNumber, person.SocialSecurityNumber) == 0))
+            {
+                return false;
+            }
             _people.Add(person);
             this.PersistPeople();
+            return true;
         }
 
         public void DeletePerson(Person person)

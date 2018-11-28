@@ -1,4 +1,4 @@
-﻿namespace NIClientServer.Models
+﻿namespace Shared
 {
     public class Person
     {

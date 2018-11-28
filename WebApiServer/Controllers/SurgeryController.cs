@@ -1,5 +1,5 @@
 ﻿using NIClientServer.Models;
-using System;
+using Shared;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -27,9 +27,9 @@ namespace NIClientServer.Controllers
         [HttpPost]
         public void Post([FromBody] Person person)
         {
-            if (person != null)
+            if (person == null || !personRepository.AddPerson(person))
             {
-                personRepository.AddPerson(person);
+                throw new HttpResponseException(new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest, ReasonPhrase = "The person is already exists." });
             }
         }
 

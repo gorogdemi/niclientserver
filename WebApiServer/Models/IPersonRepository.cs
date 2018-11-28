@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using Shared;
+using System.Collections.Generic;
 
 namespace NIClientServer.Models
 {
     interface IPersonRepository
     {
         IEnumerable<Person> GetPeople();
-        void AddPerson(Person person);
+        bool AddPerson(Person person);
         void DeletePerson(Person person);
     }
 }
