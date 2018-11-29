@@ -1,7 +1,6 @@
 ﻿using NIClientServer.Models;
 using Shared;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -18,12 +17,6 @@ namespace NIClientServer.Controllers
             return personRepository.GetPeople();
         }
 
-        [HttpGet]
-        public Person Get(string socSecNum)
-        {
-            return personRepository.GetPeople().Where(x => x.SocialSecurityNumber == socSecNum).SingleOrDefault();
-        }
-
         [HttpPost]
         public void Post([FromBody] Person person)
         {
@@ -34,12 +27,13 @@ namespace NIClientServer.Controllers
         }
 
         [HttpDelete]
-        public void Delete([FromBody] Person person)
+        public void Delete(string id)
         {
-            if (person != null)
+            if (id == null)
             {
-                personRepository.DeletePerson(person);
+                throw new HttpResponseException(new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest, ReasonPhrase = "A social security number must be provided." });
             }
+            personRepository.DeletePerson(id);
         }
     }
 }

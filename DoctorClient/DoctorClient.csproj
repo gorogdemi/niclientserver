@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{12AC4BB9-70F0-43BB-9D55-F031A916F7D8}</ProjectGuid>
+    <ProjectGuid>{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AssistantClient</RootNamespace>
-    <AssemblyName>AssistantClient</AssemblyName>
+    <RootNamespace>DoctorClient</RootNamespace>
+    <AssemblyName>DoctorClient</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,7 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup />
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
@@ -108,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj">
-      <Project>{ea7a24af-4a5e-4066-b73f-44374802daa4}</Project>
+      <Project>{EA7A24AF-4A5E-4066-B73F-44374802DAA4}</Project>
       <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>

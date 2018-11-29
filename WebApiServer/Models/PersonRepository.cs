@@ -30,9 +30,9 @@ namespace NIClientServer.Models
             return true;
         }
 
-        public void DeletePerson(Person person)
+        public void DeletePerson(string socSecNum)
         {
-            _people.Remove(person);
+            _people.RemoveAll(x => string.CompareOrdinal(x.SocialSecurityNumber, socSecNum) == 0);
             this.PersistPeople();
         }
 

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssistantClient", "Assistan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{EA7A24AF-4A5E-4066-B73F-44374802DAA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorClient", "DoctorClient\DoctorClient.csproj", "{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA7A24AF-4A5E-4066-B73F-44374802DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5377DBC1-5A5E-4641-8F27-FCDEA2F0FCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

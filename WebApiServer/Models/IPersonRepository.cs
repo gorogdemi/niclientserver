@@ -7,6 +7,6 @@ namespace NIClientServer.Models
     {
         IEnumerable<Person> GetPeople();
         bool AddPerson(Person person);
-        void DeletePerson(Person person);
+        void DeletePerson(string socSecNum);
     }
 }
